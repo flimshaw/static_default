@@ -1,0 +1,24 @@
+@full_width: 1020px;
+@med_width: 800px;
+@sm_l_width: 480px;
+@sm_p_width: 320px;
+
+@bg_dark: #000000;
+@fg_light: #ffffff;
+@fg_med: #595959;
+
+@nav_onstate: #ffffff;
+
+// Default styles: these will get overwritten by specific display port rules
+body {
+   font-family: arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: @bg_dark;
+}
+
+#container, header, footer {
+   width: @full_width;
+   margin: 0 auto;
+   padding: 0;
+}

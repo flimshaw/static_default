@@ -1,0 +1,15 @@
+{
+	"jsDir": "public/js", // This is a relative path to where your JS files live
+	"cssDir": "public/css", // This is a relative path to where your CSS files live
+	"sourceDir": "src", // This is the name of the dir inside jsDir and cssDir where your source files will live.
+	"buildDir": ".", // This is the name of the dir inside jsDir and cssDir where your built files will live.
+	"bundles": { // List each bundle in here like so...
+		"app.js": [
+			"libs/jquery-1.7.2.min.js",
+			"libs/less-1.3.0.min.js",
+			"libs/underscore-min.js",
+			"libs/backbone-min.js",
+			"app.js"
+		]
+	}
+}

@@ -1,0 +1,44 @@
+[
+	{
+	"title": "Project 1",
+	"brand": "Brand 1",
+	"video": {
+		"title": "Video Title 1",
+		"director": "Director 1",
+		"still": "http://placehold.it/960x540"						
+		},
+	"images": {
+        "img1": "http://placehold.it/300x100",
+		"img2": "http://placehold.it/300x100",
+		"img3": "http://placehold.it/300x100"
+		}
+	},
+	{
+	"title": "Project 2",
+	"brand": "Brand 2",
+	"video": {
+		"title": "Video Title 2",
+		"director": "Director 1",
+		"still": "http://placehold.it/960x540"
+		},
+	"images": {
+        "img1": "http://placehold.it/300x100",
+		"img2": "http://placehold.it/300x100",
+		"img3": "http://placehold.it/300x100"
+		}
+	},
+	{
+	"title": "Project 3",
+	"brand": "Brand 3",
+	"video": {
+		"title": "Video Title 3",
+		"director": "Director 3",
+		"still": "http://placehold.it/960x540"
+		},
+	"images": {
+        "img1": "http://placehold.it/300x100",
+		"img2": "http://placehold.it/300x100",
+		"img3": "http://placehold.it/300x100"
+		}
+	}
+]
