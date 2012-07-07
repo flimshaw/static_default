@@ -45,7 +45,7 @@ namespace :local do
   # start coffeescript server
   task :coffee do |t, args|
     puts "*** Starting coffeescript watcher ***"
-    system('coffee -o public/js/src/ --join app.js -cw app/rabbit/coffeescripts/models.coffee app/rabbit/coffeescripts/collections.coffee app/rabbit/coffeescripts/views.coffee app/rabbit/coffeescripts/util.coffee app/rabbit/coffeescripts/routers.coffee app/rabbit/coffeescripts/app.coffee & coffee -o public/js/spec/ -cw app/rabbit/coffeescripts/spec/ &')
+    system('coffee -o public/js/src/ --join app.js -cw app/default/coffeescripts/models.coffee app/default/coffeescripts/collections.coffee app/default/coffeescripts/views.coffee app/default/coffeescripts/util.coffee app/default/coffeescripts/routers.coffee app/default/coffeescripts/app.coffee & coffee -o public/js/spec/ -cw app/default/coffeescripts/spec/ &')
     puts "*** Done! ***"
   end
 
