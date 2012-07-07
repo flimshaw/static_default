@@ -21,33 +21,9 @@
   </script>
 
   <script type="text/template" id="nav_template">
-      <a href="#/directors" id="directors">Directors</a>
-      <a href="#/animation" id="animation">Animation</a>
-      <a href="#/entertainment" id="entertainment">Entertainment</a>
-      <a href="#/about" id="about">About</a>
-      <a href="#" class="clientLogin">Client Login</a>
-  </script>
-
-  <script type="text/template" id="project_template">
-    <div class="project">
-      <h1><%=video.director%></h1>
-      <img src="<%=video.still%>" />
-      <h2><%=video.title%></h2>
-      <h3><%=brand%></h3>
-    </div>
-  </script>
-
-  <script type="text/template" id="projects_template">
-    <ul class="projects"></ul>
-  </script>
-
-  <script type="text/template" id="director_template">
-    <a href="/#/director/<%=director%>"><%=director%></a>
-  </script>
-
-  <script type="text/template" id="directorList_template">
-    <h1>Directors</h1>
-    <ul class="directors"></ul>
+    <nav>
+        <a href="about/">about</a>
+    </nav>
   </script>
 
 </head>
@@ -56,27 +32,16 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
   <header>
-    <a href="/#"><img src="images/logo_white.svg" alt="Rabbit Content" /></a>
     <nav></nav>
   </header>
   
-  <section id="main">
-    <div id="container"></div>
-
-    <div id="viewContainer"></div>
-  </section>
+    <section id="main">
+        
+        <div id="container"></div>  <!-- main container div that backbone will inject into -->
+    
+    </section>
 
   <footer>
-
-    <section id="about">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
-    </section>
-
-    <section id="contact">
-      <a href="#">New York</a>
-      <a href="#">LA</a>
-      <a href="#">PR / Reps</a>
-    </section>
 
   </footer>
 
@@ -86,35 +51,6 @@
   <script type="text/javascript" src="tests/lib/jasmine-1.2.0/jasmine.js"></script>
   <script type="text/javascript" src="tests/lib/jasmine-1.2.0/jasmine-html.js"></script>
   <script type="text/javascript" src="js/spec/ProjectSpec.js"></script>
-
-  <script type="text/javascript">
-    (function() {
-      var jasmineEnv = jasmine.getEnv();
-      jasmineEnv.updateInterval = 1000;
-
-      var htmlReporter = new jasmine.HtmlReporter();
-
-      jasmineEnv.addReporter(htmlReporter);
-
-      jasmineEnv.specFilter = function(spec) {
-        return htmlReporter.specFilter(spec);
-      };
-
-      var currentWindowOnload = window.onload;
-
-      window.onload = function() {
-        if (currentWindowOnload) {
-          currentWindowOnload();
-        }
-        execJasmine();
-      };
-
-      function execJasmine() {
-        jasmineEnv.execute();
-      }
-
-    })();
-  </script>
 
 </body>
 </html>
