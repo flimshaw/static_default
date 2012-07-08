@@ -1,8 +1,7 @@
 # MODELS
 @app = window.app ? {}
 
-
-class Model extends Backbone.Model
+class Album extends Backbone.Model
 
 # Tie projects into global app var
-@app.Model = Model
+@app.Album = Album

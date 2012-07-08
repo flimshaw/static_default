@@ -1,8 +1,8 @@
 @app = window.app ? {}
 
 jQuery ->
-        app.Projects.fetch()
-        app.router = new app.appRounter()
+        app.Albums.fetch()
+        app.router = new app.AppRouter()
         app.router.on "route", () ->
                 console.log "routed."
         Backbone.history.start()
