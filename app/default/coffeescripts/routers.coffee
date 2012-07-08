@@ -14,7 +14,7 @@ jQuery ->
 
                 home: () ->
                         @$container.empty()
+                        @view = new app.AlbumsView collection: app.Albums
+                        @$container.html(@view.render().el)
 
           app.AppRouter = AppRouter
-                        
-                

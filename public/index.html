@@ -37,7 +37,20 @@
 
     <script type="text/template" id="album_template">
         <div class="album">
-            <
+            <h2><%=title%></h2>
+            <img src="images/albums/<%=slug%>.jpg" />
+            <ul>
+            <% _.each(songs, function(song) { %>
+               <li><%=song%></li>
+            <% }); %>
+            </ul>
+        </div>
+    </script>
+    
+    <script type="text/template" id="albums_template">
+        <ul class="albums">
+
+        </ul>
     </script>
 
 </head>
@@ -47,7 +60,6 @@
 
     <header>
       <h1>Housewives &amp; Hard Drives</h1>
-      <nav></nav>
     </header>
   
     <section id="main">

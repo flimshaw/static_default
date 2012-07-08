@@ -1,9 +1,16 @@
 [
     {
     "title": "What's Up Broads?",
-    "songs": {
-        1: "Obama's Not Enough",
-        2: "Go Back To Lancaster"
-        }
+    "slug": "whats_up_broads",
+    "songs": [
+        "Obama's Not Enough",
+        "Go Back To Lancaster",
+        "What Girls Like to Do",
+        "Snakes and Frogs and Insects",
+        "Night Court Theme",
+        "Thomas Edison is a Dick",
+        "Contextualizing Leisure Suit Larry",
+        "Housewives and Hard Drives"
+        ]
     }
 ]
